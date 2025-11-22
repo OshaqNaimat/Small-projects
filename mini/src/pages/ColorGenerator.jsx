@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Values from "values.js";
-import SingleColor from "./SingleColor";
+import SingleColor from "../components/SingleColor";
 import toast, { Toaster } from "react-hot-toast";
 const App = () => {
   const [colorvalue, setColorvalue] = useState("");
