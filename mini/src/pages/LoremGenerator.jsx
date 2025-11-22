@@ -25,19 +25,19 @@ const Lorem = () => {
 
   return (
     <>
-      <div className="container mx-auto rounded-md shadow-lg my-5 p-3 shadow-black w-[90%] select-none md:w-1/2 lg:md-1/3">
+      <div className="container mx-auto rounded-md shadow-lg my-5 p-3 shadow-black w-full select-none md:w-1/2 lg:md-1/3">
         <h1 className="text-center text-2xl font-semibold">Lorem generator</h1>
         <form action="">
           <input
-            className="w-full border rounded-md outline-0 p-1 "
+            className="w-full border border-2 rounded-md outline-0 p-1 "
             value={number}
             onChange={(e) => setNumber(e.target.value)}
-            type="text"
+            type="number"
             placeholder="e.g 3"
           />
           <button
             onClick={generate}
-            className="text-center bg-blue-500 rounded-md p-3 w-full text-white my-3"
+            className="text-center bg-blue-500 rounded-md p-3  w-full text-white my-3"
           >
             Generate
           </button>
