@@ -86,7 +86,7 @@ body {
 /* ============================= */
 /* SMALL SCREEN → Bottom Icons */
 /* ============================= */
-@media (max-width: 600px) {
+@media (max-width: 745px) {
   .sidebar {
     display: none;
   }
