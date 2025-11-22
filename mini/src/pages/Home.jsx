@@ -33,7 +33,7 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-4">
         <div
           className="container flex justify-center items-center shadow-lg cursor-pointer  transform transition-transform duration-300 
-            hover:-translate-y-2 rounded-md shadow-black p-10  "
+            hover:-translate-y-2 rounded-md shadow-gray-500 p-10  "
         >
           <Link to="/lorem-generator" className="project-card">
             <div className="flex justify-center">
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div
           className="container flex justify-center items-center shadow-lg cursor-pointer  transform transition-transform duration-300 
-            hover:-translate-y-2 rounded-md shadow-black p-10  "
+            hover:-translate-y-2 rounded-md shadow-gray-500 p-10  "
         >
           <Link to="/color-generator" className="project-card">
             <div className="flex justify-center">
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
         <div
           className="container flex justify-center items-center shadow-lg cursor-pointer  transform transition-transform duration-300 
-            hover:-translate-y-2 rounded-md shadow-black p-10  "
+            hover:-translate-y-2 rounded-md shadow-gray-500 p-10  "
         >
           <Link to="/todo-list" className="project-card">
             <div className="flex justify-center">
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <div
           className="container flex justify-center items-center shadow-lg cursor-pointer  transform transition-transform duration-300 
-            hover:-translate-y-2 rounded-md shadow-black p-10  "
+            hover:-translate-y-2 rounded-md shadow-gray-500 p-10  "
         >
           <Link to="/birthday-reminder" className="project-card">
             <div className="flex justify-center">
