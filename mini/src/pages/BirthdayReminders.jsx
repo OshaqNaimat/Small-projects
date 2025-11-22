@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Singlebday from "./Singlebday";
-import { bday } from "./Data";
+import Singlebday from "../components/Singlebday";
+import { bday } from "../components/Bdata";
 import { FaTrashAlt } from "react-icons/fa";
 
 const Birthday = () => {
@@ -30,7 +30,7 @@ const Birthday = () => {
           } cursor-pointer active:scale-90  w-full
               p-2 rounded-md text-white duration-200 select-none`}
           type="button"
-          onClick={data.length == 0 ? () => setData(info) : () => setData([])}
+          onClick={data.length == 0 ? () => setData(bday) : () => setData([])}
         >
           {data.length == 0 ? "Refresh All" : "Remove All"}
         </button>
