@@ -55,7 +55,7 @@ export default function Sidebar() {
       </aside>
 
       {/* Mobile Bottom Bar */}
-      <div className="mobile-nav">
+      <div className="mobile-nav z-10">
         {links.map((link) => (
           <Link
             key={link.path}

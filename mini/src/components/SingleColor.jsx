@@ -28,7 +28,7 @@ const SingleColor = ({ rgb, hexValue, id, setbg }) => {
         className="fade-in p-20 shadow my-10 mx-4 rounded-md text-center relative select-none hover:scale-110 duration-500"
       >
         <h2
-          className={`text-2xl ${
+          className={`text-2xl text-center ${
             id > 10 ? `text-white` : `text-black`
           } font-semibold text-center`}
         >
