@@ -12,7 +12,7 @@ export default function App() {
     <>
       <Sidebar />
 
-      <div style={{}} className=" lg:ml-[20%] md:ml-0 sm:ml-0 ">
+      <div style={{}} className=" lg:ml-[20%] md:ml-[10%] sm:ml-[8%] ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/lorem-generator" element={<LoremGenerator />} />

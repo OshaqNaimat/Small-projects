@@ -25,7 +25,7 @@ const Lorem = () => {
 
   return (
     <>
-      <div className="container rounded-md shadow-lg my-5 p-3 shadow-black w-full select-none md:w-1/2 lg:md-1/3">
+      <div className="container mx-auto rounded-md shadow-lg my-5 p-3 shadow-black w-full select-none md:w-1/2 lg:md-1/3">
         <h1 className="text-center text-2xl font-semibold">Lorem generator</h1>
         <form action="">
           <input
@@ -44,7 +44,7 @@ const Lorem = () => {
         </form>
       </div>
 
-      <div className="container grid grid-cols-2 gap-5">
+      <div className="container grid lg:grid-cols-2 grid-cols-1 gap-5 ">
         {lorem.map((item, index) => {
           return <p className="text-justify text-gray-500"> {item} </p>;
         })}
