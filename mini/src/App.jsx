@@ -11,12 +11,12 @@ export default function App() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-10 min-h-screen">
       {/* Sidebar */}
-      <div className="lg:col-span-3 md:col-span-2  ">
+      <div className="lg:col-span-2 md:col-span-2  ">
         <Sidebar />
       </div>
 
       {/* Routes / Main Content */}
-      <div className="lg:col-span-7 md:col-span-8 ">
+      <div className="lg:col-span-8 md:col-span-8 ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/lorem-generator" element={<LoremGenerator />} />
