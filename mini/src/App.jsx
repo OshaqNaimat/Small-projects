@@ -9,10 +9,14 @@ import BirthdayReminder from "./pages/BirthdayReminders";
 
 export default function App() {
   return (
-    <>
-      <Sidebar />
+    <div className="grid grid-cols-1 md:grid-cols-10 min-h-screen">
+      {/* Sidebar */}
+      <div className="lg:col-span-3 md:col-span-2  ">
+        <Sidebar />
+      </div>
 
-      <div style={{}} className=" lg:ml-[20%] md:ml-[10%] sm:ml-[8%] ">
+      {/* Routes / Main Content */}
+      <div className="lg:col-span-7 md:col-span-8 ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/lorem-generator" element={<LoremGenerator />} />
@@ -21,6 +25,6 @@ export default function App() {
           <Route path="/birthday-reminder" element={<BirthdayReminder />} />
         </Routes>
       </div>
-    </>
+    </div>
   );
 }

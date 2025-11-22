@@ -14,16 +14,24 @@ export default function Sidebar() {
 
   const links = [
     { name: "Home", path: "/", icon: <FaHome /> },
-    { name: "Lorem", path: "/lorem-generator", icon: <FaAlignLeft /> },
-    { name: "Colors", path: "/color-generator", icon: <FaPalette /> },
-    { name: "To-Do", path: "/todo-list", icon: <FaTasks /> },
-    { name: "Birthdays", path: "/birthday-reminder", icon: <FaBirthdayCake /> },
+    {
+      name: "Lorem Generator",
+      path: "/lorem-generator",
+      icon: <FaAlignLeft />,
+    },
+    { name: "Color generator", path: "/color-generator", icon: <FaPalette /> },
+    { name: "To-Do List", path: "/todo-list", icon: <FaTasks /> },
+    {
+      name: "Birthday Reminder",
+      path: "/birthday-reminder",
+      icon: <FaBirthdayCake />,
+    },
   ];
 
   return (
     <>
       {/* Desktop + Tablet Sidebar */}
-      <aside className="sidebar">
+      <aside className="sidebar ">
         <h2 className="logo">Small Projects</h2>
 
         <nav>
