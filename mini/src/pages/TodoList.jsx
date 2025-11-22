@@ -28,7 +28,7 @@ const Input = () => {
   }, [name]);
   return (
     <>
-      <div className="container w-[90%] md:w-1/2 lg:w-1/3 mx-auto p-5 shadow-lg">
+      <div className="container w-[90%] md:w-1/2 lg:w-1/3 mx-auto p-5 shadow-lg shadow-gray-500 rounded-md ">
         <form>
           <label htmlFor="">Name</label>
           <input
@@ -47,7 +47,7 @@ const Input = () => {
             onClick={addData}
             className="w-full bg-blue-500 p-3 mt-5 active:scale-90 hover:bg-blue-800 cursor-pointer duration-300 text-white rounded-md"
           >
-            Add Data
+            Add data
           </button>
         </form>
       </div>

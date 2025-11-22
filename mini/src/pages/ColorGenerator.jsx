@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div
       style={{ background: bg }}
-      className="min-h-screen w-full  p-8 transition-colors duration-1000"
+      className="min-h-screen  w-full  p-8 transition-colors duration-1000"
     >
       <Toaster position="top-right" reverseOrder={false} />
 
@@ -37,7 +37,7 @@ const App = () => {
      lg:w-1/3
      shadow-lg
      rounded-md
-     bg-white
+     
      p-3
      select-none
       `}
