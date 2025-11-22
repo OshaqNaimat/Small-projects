@@ -9,10 +9,10 @@ import BirthdayReminder from "./pages/BirthdayReminder";
 
 export default function App() {
   return (
-    <div style={{ display: "flex" }}>
+    <>
       <Sidebar />
 
-      <div style={{ marginLeft: "220px", padding: "20px", width: "100%" }}>
+      <div style={{ marginLeft: "240px", padding: "20px" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/lorem-generator" element={<LoremGenerator />} />
@@ -21,6 +21,6 @@ export default function App() {
           <Route path="/birthday-reminder" element={<BirthdayReminder />} />
         </Routes>
       </div>
-    </div>
+    </>
   );
 }

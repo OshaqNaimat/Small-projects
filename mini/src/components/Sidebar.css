@@ -1,33 +1,124 @@
+:root {
+  --bg: #ffffff;
+  --sidebar-bg: #222;
+  --text: #222;
+  --sidebar-text: #fff;
+  --active-bg: #444;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #ddd;
+  --sidebar-bg: #1e1e1e;
+  --sidebar-text: #eee;
+  --active-bg: #333;
+}
+
+/* Full Page Layout Fix */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Sidebar Base */
 .sidebar {
-  width: 220px;
-  background: #222;
-  color: white;
   height: 100vh;
+  width: 240px;
+  background: var(--sidebar-bg);
+  padding: 20px;
+  color: var(--sidebar-text);
   position: fixed;
   top: 0;
   left: 0;
-  padding: 30px 20px;
+  transition: width 0.3s ease;
 }
 
-.sidebar h2 {
+.logo {
   margin-bottom: 30px;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 20px;
-}
-
-.sidebar a {
-  color: white;
+/* Links */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--sidebar-text);
+  padding: 12px 10px;
+  border-radius: 6px;
   text-decoration: none;
-  font-size: 18px;
+  margin-bottom: 10px;
+  transition: 0.2s;
 }
 
-.sidebar a:hover {
-  color: #00c896;
+.nav-link:hover {
+  background: var(--active-bg);
+}
+
+.nav-link.active {
+  background: var(--active-bg);
+}
+
+/* Icon */
+.icon {
+  font-size: 20px;
+}
+
+/* Mobile Nav (Bottom Navigation Bar) */
+.mobile-nav {
+  display: none;
+}
+
+/* ============================= */
+/* MEDIUM SCREEN → Collapse Sidebar */
+/* ============================= */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 70px;
+  }
+  .sidebar .text {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+/* ============================= */
+/* SMALL SCREEN → Bottom Icons */
+/* ============================= */
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--sidebar-bg);
+    padding: 10px 0;
+    justify-content: space-around;
+  }
+
+  .mobile-link {
+    color: var(--sidebar-text);
+    font-size: 22px;
+  }
+
+  .mobile-link.active {
+    color: #72ddf7;
+  }
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  margin-top: 30px;
+  padding: 10px;
+  border: none;
+  background: var(--active-bg);
+  color: var(--sidebar-text);
+  border-radius: 8px;
+  cursor: pointer;
 }
