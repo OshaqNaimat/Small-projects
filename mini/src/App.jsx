@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
+import toast, { Toaster } from "react-hot-toast";
 
 import Home from "./pages/Home";
 import LoremGenerator from "./pages/LoremGenerator";
