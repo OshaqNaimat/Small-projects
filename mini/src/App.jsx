@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
 
-function App() {
-  const [count, setCount] = useState(0)
+import Home from "./pages/Home";
+import LoremGenerator from "./pages/LoremGenerator";
+import ColorGenerator from "./pages/ColorGenerator";
+import TodoList from "./pages/TodoList";
+import BirthdayReminder from "./pages/BirthdayReminder";
 
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div style={{ display: "flex" }}>
+      <Sidebar />
 
-export default App
+      <div style={{ marginLeft: "220px", padding: "20px", width: "100%" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/lorem-generator" element={<LoremGenerator />} />
+          <Route path="/color-generator" element={<ColorGenerator />} />
+          <Route path="/todo-list" element={<TodoList />} />
+          <Route path="/birthday-reminder" element={<BirthdayReminder />} />
+        </Routes>
+      </div>
+    </div>
+  );
+}
