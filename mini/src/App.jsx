@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import LoremGenerator from "./pages/LoremGenerator";
 import ColorGenerator from "./pages/ColorGenerator";
 import TodoList from "./pages/TodoList";
-import BirthdayReminder from "./pages/BirthdayReminder";
+import BirthdayReminder from "./pages/BirthdayReminders";
 
 export default function App() {
   return (
