@@ -26,6 +26,13 @@ const Input = () => {
       setError(false);
     }
   }, [name]);
+
+  const remove = (id) => {
+    let newData = data.filter((item, index) => {
+      return item != id;
+    });
+    setData(newData);
+  };
   return (
     <>
       <div className="container w-[90%] md:w-1/2 lg:w-1/3 mx-auto p-5 shadow-lg shadow-gray-500 rounded-md ">
@@ -35,7 +42,7 @@ const Input = () => {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full shadow-2xl p-3 rounded-md outline-0 border-gray-500 focus:border-green-500 "
+            className="w-full shadow-lg p-3 rounded-md   focus:border-green-500 "
             placeholder="Add your name ...."
           />
           {error && (
@@ -54,7 +61,7 @@ const Input = () => {
 
       <div className="container mx-auto gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {data.map((item, index) => {
-          return <SingleItem key={index} single={item} />;
+          return <SingleItem remove={remove} key={index} single={item} />;
         })}
       </div>
     </>
