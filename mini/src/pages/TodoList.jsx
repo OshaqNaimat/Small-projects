@@ -28,9 +28,7 @@ const Input = () => {
   }, [name]);
 
   const remove = (id) => {
-    let newData = data.filter((item, index) => {
-      return item != id;
-    });
+    let newData = data.filter((item, index) => index != id);
     setData(newData);
   };
   return (
@@ -61,7 +59,9 @@ const Input = () => {
 
       <div className="container mx-auto gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {data.map((item, index) => {
-          return <SingleItem remove={remove} key={index} single={item} />;
+          return (
+            <SingleItem remove={remove} key={index} id={index} single={item} />
+          );
         })}
       </div>
     </>
