@@ -32,7 +32,7 @@ export default function Sidebar() {
     <>
       {/* Desktop + Tablet Sidebar */}
       <aside className="sidebar ">
-        <h2 className="logo">Small Projects</h2>
+        <h2 className="logo">Mini Projects</h2>
 
         <nav>
           {links.map((link) => (
